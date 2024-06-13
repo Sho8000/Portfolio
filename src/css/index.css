@@ -1,0 +1,94 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  /*   background-image: linear-gradient(to right top, #000000, #261d25, #3a384e, #395979, #177f9b, #138dab, #0d9bbc, #00aacc, #00a1e3, #0094f7, #0081ff, #7763f9);
+   */
+}
+
+@media only screen and (max-width: 425px) {
+  .Header {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .Header h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: solid 1px white;
+  }
+  .Header nav {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    flex-wrap: wrap;
+    border-bottom: solid 1px white;
+  }
+  .Header nav p {
+    margin-left: 2rem;
+    text-decoration: underline;
+  }
+  .Header nav p:hover {
+    background-size: contain;
+    background-color: white;
+    color: blue;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .Header {
+    background-color: black;
+    color: white;
+    padding: 0 2rem;
+  }
+  .Header h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1rem;
+    border-bottom: 0.5px solid white;
+  }
+  .Header nav {
+    border-bottom: solid 1px white;
+  }
+  .Header nav p {
+    display: inline-block;
+    text-decoration: underline;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+  }
+  .Header nav p:hover {
+    background-size: contain;
+    background-color: white;
+    color: blue;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .Header {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    border-bottom: solid 1px white;
+  }
+  .Header h1 {
+    justify-self: center;
+  }
+  .Header nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .Header nav p {
+    margin-right: 1.5rem;
+    text-decoration: underline;
+  }
+  .Header nav p:hover {
+    background-size: contain;
+    background-color: white;
+    color: blue;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

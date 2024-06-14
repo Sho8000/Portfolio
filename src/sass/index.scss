@@ -264,7 +264,7 @@ body{
     }
     .icons{
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3,8rem);
       place-items: center;
       @include MarginLR(2rem);
       .iconName{
@@ -273,7 +273,7 @@ body{
         margin-bottom: 0;
       }
       .Logo{
-        width: 50%;
+        max-width: 40%;
         margin-bottom: 3rem;
       }
     }

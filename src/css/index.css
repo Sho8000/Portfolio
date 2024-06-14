@@ -246,7 +246,7 @@ body {
   }
   .About .icons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 8rem);
     place-items: center;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -257,7 +257,7 @@ body {
     margin-bottom: 0;
   }
   .About .icons .Logo {
-    width: 50%;
+    max-width: 40%;
     margin-bottom: 3rem;
   }
   .About .Mypicture {

@@ -2,13 +2,11 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(to right top, #000000, #261d25, #3a384e, #395979, #177f9b, #138dab, #0d9bbc, #00aacc, #00a1e3, #0094f7, #0081ff, #7763f9);
+  background-image: linear-gradient(to right top, #1c1546, #0d3265, #004f7f, #006d93, #008aa3, #0095b0, #009fbe, #00aacc, #00a1e3, #0094f7, #0081ff, #7763f9);
 }
 
 @media only screen and (max-width: 425px) {
   .Header {
-    background-color: black;
-    color: white;
     display: flex;
     flex-direction: column;
   }
@@ -16,14 +14,14 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px rgb(60, 24, 156);
   }
   .Header nav {
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 14vh;
     flex-wrap: wrap;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px rgb(60, 24, 156);
   }
   .Header nav p {
     margin-left: 2rem;
@@ -38,9 +36,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
-    color: white;
-    height: 100vh;
+    min-height: 100vh;
+  }
+  .About h1 {
+    font-family: Courgette;
+    font-size: 40px;
   }
   .About .name {
     margin-bottom: 0;
@@ -53,18 +53,22 @@ body {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
+  .About .tytle h2 {
+    color: #d6a284;
+  }
   .About .Mypicture {
     order: 1;
     width: 80%;
   }
   .About .information {
     order: 3;
-    display: flex;
-    word-break: break-all;
     margin-top: 0;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-bottom: 1.5rem;
+  }
+  .About .information span {
+    color: rgb(192, 255, 18);
   }
   .About .icons {
     order: 4;
@@ -87,18 +91,16 @@ body {
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   .Header {
-    background-color: black;
-    color: white;
     padding: 0 2rem;
   }
   .Header h2 {
     margin-top: 0;
     margin-bottom: 0;
     padding: 1rem;
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid rgb(60, 24, 156);
   }
   .Header nav {
-    border-bottom: solid 1px white;
+    border-bottom: 0.5px solid rgb(60, 24, 156);
   }
   .Header nav p {
     display: inline-block;
@@ -115,59 +117,26 @@ body {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-areas: "name name" "tytle  Mypicture" "tytle Mypicture" "icons none";
-    background-color: black;
-    color: white;
-    height: 100vh;
-    /*     .icons{
-          grid-area: icons;
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-          grid-template-areas: 
-          "EmailLogo EmailLINK"
-          "InstagramLogo InstagramLINK"
-          "LinkedInLogo LinkedInLINK";
-          .iconName{
-            place-items: left;
-            margin-left: 2rem;
-          }
-          .Logo{
-            justify-self: flex-end;
-            width: 30%;
-            margin-bottom: 1rem;
-          }
-        }
-
-
-        #EmailLogo{
-          grid-area: EmailLogo;
-        }
-        #EmailLINK{
-          grid-area: EmailLINK;
-        }
-        #InstagramLogo{
-          grid-area: InstagramLogo;
-        }
-        #InstagramLINK{
-          grid-area: InstagramLINK;
-        }
-        #LinkedInLogo{
-          grid-area: LinkedInLogo;
-        }
-        #LinkedInLINK{
-          grid-area: LinkedInLINK;
-        }*/
+    min-height: 100vh;
+  }
+  .About h1 {
+    font-family: Courgette;
+    font-size: 48px;
+  }
+  .About h2 {
+    color: #d6a284;
   }
   .About .name {
     grid-area: name;
     margin-left: 3rem;
     margin-right: 3rem;
     margin-top: 2rem;
+    margin-bottom: 0;
   }
   .About .tytle {
     grid-area: tytle;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-top: 2rem;
     margin-bottom: 0;
   }
   .About .tytle .information {
@@ -200,21 +169,20 @@ body {
   }
   .About .information {
     order: 3;
-    display: flex;
-    word-break: break-all;
     margin-top: 0;
     margin-left: 3.5rem;
     margin-right: 3.5rem;
   }
+  .About .information span {
+    color: rgb(192, 255, 18);
+  }
 }
 @media only screen and (min-width: 769px) {
   .Header {
-    background-color: black;
-    color: white;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 3fr;
     align-items: center;
-    border-bottom: solid 1px white;
+    border-bottom: 0.5px solid rgb(60, 24, 156);
   }
   .Header h2 {
     justify-self: flex-start;
@@ -237,14 +205,20 @@ body {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-areas: "name Mypicture" "tytle  Mypicture" "information Mypicture" "icons Mypicture";
-    background-color: black;
-    color: white;
-    height: 100vh;
+    min-height: 100vh;
+  }
+  .About h1 {
+    font-family: Courgette;
+    font-size: 60px;
+  }
+  .About h2 {
+    color: #d6a284;
+    font-size: 26px;
   }
   .About .name {
     grid-area: name;
     margin-left: 3rem;
-    margin-right: 3rem;
+    margin-top: 3rem;
   }
   .About .tytle {
     grid-area: tytle;
@@ -252,10 +226,19 @@ body {
     margin-right: 2rem;
     margin-bottom: 0;
   }
+  .About .tytle h2 {
+    color: #d6a284;
+  }
   .About .tytle .information {
     grid-area: information;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    order: 3;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+  .About .tytle .information span {
+    color: rgb(192, 255, 18);
   }
   .About .icons {
     display: grid;
@@ -277,14 +260,6 @@ body {
     grid-area: Mypicture;
     align-self: center;
     width: 90%;
-  }
-  .About .information {
-    order: 3;
-    display: flex;
-    word-break: break-all;
-    margin-top: 0;
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
   }
 }
 

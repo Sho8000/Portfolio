@@ -12,12 +12,18 @@ body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(to right top, #1c1546, #0d3265, #004f7f, #006d93, #008aa3, #0095b0, #009fbe, #00aacc, #00a1e3, #0094f7, #0081ff, #7763f9);
+  background-image: linear-gradient(to right top, #645b9b, #4c6ead, #2b80b7, #0091bb, #00a0b8, #00a6bf, #00acc6, #00b2cd, #00b0e2, #35aaf3, #6fa2fb, #a295f8);
 
 }
 
 @media only screen and (max-width:425px){
-  .Header{
+  h1 {
+    display: block;
+    font-family: Courgette;      
+    font-size: 40px;
+    text-align: center;
+    }
+.Header{
     display: flex;
     flex-direction: column;
     h2{
@@ -45,10 +51,6 @@ body{
   }
 
   .About{
-    h1 {
-      font-family: Courgette;      
-      font-size: 40px;
-      }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,10 +100,60 @@ body{
       }
     }
   }
+
+  .Skills{
+    min-height: 100vh;
+    .title{
+      display: block;
+      border-top: 0.5px solid rgb(60, 24, 156);
+      margin-top: 3rem;
+    }
+    .ShowMore{
+      display: block;
+      text-align: right;
+      color: white;
+      margin-top: 3rem;
+      padding-right: 3rem;
+      text-decoration: underline;
+    }
+  }
+  .SkillGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5vh;
+    justify-items: center;
+    .Outline{
+      display: grid;
+      grid-template-rows: 0.5fr 3fr 7fr;
+      background-color: rgb(51, 67, 158);
+      border-radius: 5%;
+      width: 80vw;
+      height: 60vh;
+      place-items: center;
+      h2{
+        color: white;
+        margin: 0.5rem;
+      }
+      .image{
+        max-width: 90%;
+      }
+      p{
+        margin: 0;
+        padding: 1rem 1rem;
+        color: white;
+        font-size: 20px;
+        place-self: start;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width:426px) and (max-width:768px){
-  .Header{
+  h1 {
+    font-family: Courgette;      
+    font-size: 48px;
+  }
+.Header{
     padding: 0 2rem;
     h2{
       margin-top: 0;
@@ -128,10 +180,6 @@ body{
   }
 
   .About{
-    h1 {
-      font-family: Courgette;      
-      font-size: 48px;
-    }
       h2{
         color: #d6a284;
       }
@@ -190,9 +238,64 @@ body{
     }
   }
 
+  .Skills{
+    min-height: 100vh;
+    .title{
+      display: block;
+      border-top: 0.5px solid rgb(60, 24, 156);
+      margin-top: 3rem;
+      padding-left: 3rem;
+    }
+    .ShowMore{
+      display: block;
+      text-align: right;
+      color: white;
+      margin-top: 3rem;
+      padding-right: 3rem;
+      text-decoration: underline;
+    }
+  }
+  .SkillGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70vh;
+    justify-items: center;
+    margin-top: rem;
+    .Outline{
+      display: grid;
+      grid-template-rows: 0.5fr 3fr 7fr;
+      background-color: rgb(51, 67, 158);
+      border-radius: 5%;
+      width: 40vw;
+      min-height: 60vh;
+      place-items: center;
+      h2{
+        color: white;
+        margin: 0.5rem;
+      }
+      .image{
+        max-width: 90%;
+      }
+      p{
+        margin: 0;
+        padding: 1rem 1rem;
+        color: white;
+        font-size: 20px;
+        place-self: start;
+      }
+    }
+    .hide{
+      display: none;
+    }
+}
 }
 
 @media only screen and (min-width:769px){
+  h1 {
+    font-family: Courgette;      
+    font-size: 60px;
+  }
+
   .Header{
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -218,10 +321,6 @@ body{
   }
 
   .About{
-    h1 {
-      font-family: Courgette;      
-      font-size: 60px;
-    }
     h2{
       color: #d6a284;
       font-size: 26px;
@@ -275,10 +374,57 @@ body{
 
     .Mypicture{
       grid-area: Mypicture;
+      justify-self: center;
       align-self: center;
-      width: 90%;
+      max-width: 80%;
     }
-    .information{
+  }
+
+  .Skills{
+    min-height: 100vh;
+    .title{
+      display: block;
+      border-top: 0.5px solid rgb(60, 24, 156);
+      margin-top: 3rem;
+      padding-left: 3rem;
+    }
+    .ShowMore{
+      display: block;
+      text-align: right;
+      color: white;
+      margin-top: 3rem;
+      padding-right: 3rem;
+      text-decoration: underline;
+    }
+  }
+  .SkillGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70vh;
+    justify-items: center;
+    margin-top: rem;
+    .Outline{
+      display: grid;
+      grid-template-rows: 0.5fr 3fr 7fr;
+      background-color: rgb(51, 67, 158);
+      border-radius: 5%;
+      width: 25vw;
+      min-height: 60vh;
+      place-items: center;
+      h2{
+        color: white;
+        margin: 0.5rem;
+      }
+      .image{
+        max-width: 90%;
+      }
+      p{
+        margin: 0;
+        padding: 1rem 1rem;
+        color: white;
+        font-size: 20px;
+        place-self: start;
+      }
     }
   }
 

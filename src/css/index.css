@@ -40,16 +40,18 @@ body {
     align-items: center;
     background-color: black;
     color: white;
+    height: 100vh;
   }
   .About .name {
     margin-bottom: 0;
   }
   .About .tytle {
     order: 2;
+    margin-top: 1.5rem;
     margin-bottom: 0;
     align-self: start;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   .About .Mypicture {
     order: 1;
@@ -60,8 +62,9 @@ body {
     display: flex;
     word-break: break-all;
     margin-top: 0;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   .About .icons {
     order: 4;
@@ -111,9 +114,10 @@ body {
   .About {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-areas: "name Mypicture" "tytle  Mypicture" "information Mypicture" "icons Mypicture";
+    grid-template-areas: "name name" "tytle  Mypicture" "tytle Mypicture" "icons none";
     background-color: black;
     color: white;
+    height: 100vh;
     /*     .icons{
           grid-area: icons;
           display: grid;
@@ -157,15 +161,20 @@ body {
     grid-area: name;
     margin-left: 3rem;
     margin-right: 3rem;
+    margin-top: 2rem;
   }
   .About .tytle {
     grid-area: tytle;
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
     margin-bottom: 0;
   }
-  .About .information {
+  .About .tytle .information {
     grid-area: information;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
   }
   .About .icons {
     display: grid;
@@ -177,11 +186,12 @@ body {
   .About .icons .iconName {
     display: flex;
     justify-content: center;
+    align-self: flex-end;
     margin-bottom: 0;
   }
   .About .icons .Logo {
     width: 50%;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
   .About .Mypicture {
     grid-area: Mypicture;
@@ -207,8 +217,8 @@ body {
     border-bottom: solid 1px white;
   }
   .Header h2 {
-    justify-self: center;
-    margin-left: 1rem;
+    justify-self: flex-start;
+    margin-left: 3rem;
   }
   .Header nav {
     display: flex;
@@ -229,6 +239,7 @@ body {
     grid-template-areas: "name Mypicture" "tytle  Mypicture" "information Mypicture" "icons Mypicture";
     background-color: black;
     color: white;
+    height: 100vh;
   }
   .About .name {
     grid-area: name;
@@ -237,12 +248,14 @@ body {
   }
   .About .tytle {
     grid-area: tytle;
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-bottom: 0;
   }
-  .About .information {
+  .About .tytle .information {
     grid-area: information;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   .About .icons {
     display: grid;

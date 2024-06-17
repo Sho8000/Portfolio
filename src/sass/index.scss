@@ -52,14 +52,16 @@ body{
     align-items: center;
     background-color:black;
     color: white;
+    height: 100vh;
     .name{
       margin-bottom: 0;
     }
     .tytle{
       order: 2;
+      margin-top: 1.5rem;
       margin-bottom: 0;
       align-self: start;
-      @include MarginLR(3rem)
+      @include MarginLR(1.5rem)
    }
     .Mypicture{
       order: 1;
@@ -70,7 +72,8 @@ body{
       display: flex;
       word-break: break-all;
       margin-top: 0;
-      @include MarginLR(3rem)
+      @include MarginLR(1.5rem);
+      margin-bottom: 1.5rem;
     }
     .icons{
       order: 4;
@@ -125,24 +128,29 @@ body{
     display: grid;
     grid-template-columns:  3fr 2fr;
     grid-template-areas: 
-    "name Mypicture"
+    "name name"
     "tytle  Mypicture"
-    "information Mypicture"
-    "icons Mypicture";    
+    "tytle Mypicture"
+    "icons none";    
     background-color:black;
     color: white;
+    height: 100vh;
     .name{
       grid-area: name;
       @include MarginLR(3rem);
+      margin-top: 2rem;
     }
     .tytle{
       grid-area: tytle;
-      @include MarginLR(3.5rem);
+      @include MarginLR(2rem);
+      margin-top: 2rem;
       margin-bottom: 0;
-    }
-    .information{
-      grid-area: information;
-    }
+      .information{
+        grid-area: information;
+        @include MarginLR(2rem);
+        margin-bottom: 1.5rem;
+      }
+      }
     .icons{
       display: grid;
       grid-template-columns: repeat(3,1fr);
@@ -151,11 +159,12 @@ body{
       .iconName{
         display: flex;
         justify-content: center;
+        align-self: flex-end;
         margin-bottom: 0;
       }
       .Logo{
         width: 50%;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
       }
     }
 
@@ -222,8 +231,8 @@ body{
     align-items: center;
     border-bottom: solid 1px white;
     h2{
-      justify-self: center;
-      margin-left: 1rem;
+      justify-self: flex-start;
+      margin-left: 3rem;
     }
     nav{
       display: flex;
@@ -250,18 +259,20 @@ body{
     "icons Mypicture";    
     background-color:black;
     color: white;
+    height: 100vh;
     .name{
       grid-area: name;
       @include MarginLR(3rem);
     }
     .tytle{
       grid-area: tytle;
-      @include MarginLR(3.5rem);
+      @include MarginLR(2rem);
       margin-bottom: 0;
-    }
-    .information{
-      grid-area: information;
-    }
+      .information{
+        grid-area: information;
+        @include MarginLR(2rem);        
+      }
+      }
     .icons{
       display: grid;
       grid-template-columns: repeat(3,8rem);

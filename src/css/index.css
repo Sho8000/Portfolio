@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(to right top, #645b9b, #4c6ead, #2b80b7, #0091bb, #00a0b8, #00a6bf, #00acc6, #00b2cd, #00b0e2, #35aaf3, #6fa2fb, #a295f8);
+  background-image: linear-gradient(to right top, #0077b6, #1c8bc2, #369fcd, #50b2d7, #6bc6e1, #7dd0e6, #8fdaeb, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);
 }
 
 @media only screen and (max-width: 425px) {
@@ -90,6 +90,42 @@ body {
     width: 50%;
     margin-bottom: 3rem;
   }
+  .Project {
+    min-height: 100vh;
+  }
+  .Project .title {
+    display: block;
+    border-top: 0.5px solid rgb(60, 24, 156);
+    margin-bottom: 1rem;
+  }
+  .Project .ProjectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 3vh;
+  }
+  .Project .ProjectGrid .POutline {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
+    border-radius: 5%;
+    width: 45vw;
+    place-items: center;
+  }
+  .Project .ProjectGrid .POutline h2 {
+    margin: 1vh 0;
+  }
+  .Project .ProjectGrid .POutline .image {
+    max-width: 90%;
+  }
+  .Project .ShowMore {
+    display: block;
+    text-align: right;
+    margin-top: 3rem;
+    padding-right: 3rem;
+    text-decoration: underline;
+  }
   .Skills {
     min-height: 100vh;
   }
@@ -140,6 +176,10 @@ body {
   h1 {
     font-family: Courgette;
     font-size: 48px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
   }
   .Header {
     padding: 0 2rem;
@@ -182,9 +222,6 @@ body {
   }
   .About .tytle {
     grid-area: tytle;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 0;
   }
   .About .tytle .information {
     grid-area: information;
@@ -222,6 +259,42 @@ body {
   }
   .About .information span {
     color: rgb(192, 255, 18);
+  }
+  .Project {
+    max-height: 100vh;
+  }
+  .Project .title {
+    display: block;
+    border-top: 0.5px solid rgb(60, 24, 156);
+  }
+  .Project .ProjectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 2vh;
+  }
+  .Project .ProjectGrid .POutline {
+    display: grid;
+    grid-template-rows: 1fr 3.5fr;
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
+    border-radius: 5%;
+    width: 40vw;
+    place-items: center;
+  }
+  .Project .ProjectGrid .POutline h2 {
+    margin: 0.3vh 0;
+  }
+  .Project .ProjectGrid .POutline .image {
+    max-width: 90%;
+    margin-bottom: 1rem;
+  }
+  .Project .ShowMore {
+    display: block;
+    text-align: right;
+    margin-top: 2rem;
+    padding-right: 3rem;
+    text-decoration: underline;
   }
   .Skills {
     min-height: 100vh;
@@ -278,6 +351,8 @@ body {
   h1 {
     font-family: Courgette;
     font-size: 60px;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   .Header {
     display: grid;
@@ -319,8 +394,6 @@ body {
   }
   .About .tytle {
     grid-area: tytle;
-    margin-left: 2rem;
-    margin-right: 2rem;
     margin-bottom: 0;
   }
   .About .tytle h2 {
@@ -358,6 +431,47 @@ body {
     justify-self: center;
     align-self: center;
     max-width: 80%;
+  }
+  .Project {
+    height: 100vh;
+  }
+  .Project .title {
+    display: block;
+    border-top: 0.5px solid rgb(60, 24, 156);
+    margin-bottom: 1rem;
+  }
+  .Project .ProjectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 3vh;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .Project .ProjectGrid .POutline {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
+    border-radius: 5%;
+    width: 28vw;
+    max-width: 450px;
+    margin-top: 2rem;
+    place-items: center;
+  }
+  .Project .ProjectGrid .POutline h2 {
+    margin: 1vh 0;
+  }
+  .Project .ProjectGrid .POutline .image {
+    max-width: 90%;
+    margin-bottom: 1rem;
+  }
+  .Project .ShowMore {
+    display: block;
+    text-align: right;
+    margin-top: 4rem;
+    padding-right: 3rem;
+    text-decoration: underline;
   }
   .Skills {
     min-height: 100vh;

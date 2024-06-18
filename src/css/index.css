@@ -9,7 +9,7 @@ body {
   h1 {
     display: block;
     font-family: Courgette;
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
   }
   .Header {
@@ -42,56 +42,59 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
   }
   .About .name {
-    margin-bottom: 0;
+    margin: 1rem;
   }
   .About .tytle {
     order: 2;
-    margin-top: 1.5rem;
     margin-bottom: 0;
     align-self: start;
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
+    border-radius: 5%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
-  .About .tytle h2 {
-    color: #d6a284;
+  .About .tytle .Intro {
+    margin: 1rem 0.5rem 0 0.5rem;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  .About .tytle .PC {
+    display: none;
   }
   .About .Mypicture {
     order: 1;
-    width: 80%;
+    width: 40%;
+    margin-bottom: 1rem;
   }
   .About .information {
     order: 3;
     margin-top: 0;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     margin-bottom: 1.5rem;
-  }
-  .About .information span {
-    color: rgb(192, 255, 18);
   }
   .About .icons {
     order: 4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    /*       grid-template-areas: 
-          "EmailP InstagramP LinkedInP"
-          "EmailLogo InstagramLogo LinkedInLogo"; */
   }
   .About .icons .iconName {
     display: flex;
     justify-content: center;
-    margin-bottom: 0;
+    margin: 1rem 0 0 0;
   }
   .About .icons .Logo {
     width: 50%;
     margin-bottom: 3rem;
+    border-radius: 10%;
   }
   .Project {
-    min-height: 100vh;
+    height: 100vh;
   }
   .Project .title {
     display: block;
@@ -127,49 +130,50 @@ body {
     text-decoration: underline;
   }
   .Skills {
-    min-height: 100vh;
+    height: 100vh;
   }
   .Skills .title {
     display: block;
     border-top: 0.5px solid rgb(60, 24, 156);
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   .Skills .ShowMore {
     display: block;
     text-align: right;
-    color: white;
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding-right: 3rem;
     text-decoration: underline;
   }
   .SkillGrid {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 5vh;
+    row-gap: 3vh;
     justify-items: center;
   }
   .SkillGrid .Outline {
     display: grid;
-    grid-template-rows: 0.5fr 3fr 7fr;
-    background-color: rgb(51, 67, 158);
+    grid-template-rows: auto;
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
     border-radius: 5%;
     width: 80vw;
-    height: 60vh;
     place-items: center;
   }
   .SkillGrid .Outline h2 {
-    color: white;
-    margin: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
   }
   .SkillGrid .Outline .image {
-    max-width: 90%;
+    max-width: 70%;
+    max-height: 80%;
   }
   .SkillGrid .Outline p {
     margin: 0;
-    padding: 1rem 1rem;
-    color: white;
-    font-size: 20px;
+    padding: 0 1rem 1rem 1rem;
     place-self: start;
+  }
+  .SkillGrid .hide {
+    display: none;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
@@ -207,11 +211,13 @@ body {
   .About {
     display: grid;
     grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto;
     grid-template-areas: "name name" "tytle  Mypicture" "tytle Mypicture" "icons none";
-    min-height: 100vh;
+    height: 100vh;
   }
   .About h2 {
-    color: #d6a284;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   .About .name {
     grid-area: name;
@@ -222,17 +228,27 @@ body {
   }
   .About .tytle {
     grid-area: tytle;
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
+    border-radius: 5%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .About .tytle .Intro {
+    margin-bottom: 0;
+    margin-top: 2rem;
   }
   .About .tytle .information {
     grid-area: information;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   .About .icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    column-gap: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
   }
@@ -243,8 +259,9 @@ body {
     margin-bottom: 0;
   }
   .About .icons .Logo {
-    width: 50%;
+    width: 50px;
     margin-bottom: 5rem;
+    border-radius: 10%;
   }
   .About .Mypicture {
     grid-area: Mypicture;
@@ -257,15 +274,16 @@ body {
     margin-left: 3.5rem;
     margin-right: 3.5rem;
   }
-  .About .information span {
-    color: rgb(192, 255, 18);
+  .About .PC {
+    display: none;
   }
   .Project {
-    max-height: 100vh;
+    height: 100vh;
   }
   .Project .title {
     display: block;
     border-top: 0.5px solid rgb(60, 24, 156);
+    margin-bottom: 1rem;
   }
   .Project .ProjectGrid {
     display: grid;
@@ -308,7 +326,6 @@ body {
   .Skills .ShowMore {
     display: block;
     text-align: right;
-    color: white;
     margin-top: 3rem;
     padding-right: 3rem;
     text-decoration: underline;
@@ -323,14 +340,14 @@ body {
   .SkillGrid .Outline {
     display: grid;
     grid-template-rows: 0.5fr 3fr 7fr;
-    background-color: rgb(51, 67, 158);
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
     border-radius: 5%;
     width: 40vw;
     min-height: 60vh;
     place-items: center;
   }
   .SkillGrid .Outline h2 {
-    color: white;
     margin: 0.5rem;
   }
   .SkillGrid .Outline .image {
@@ -339,7 +356,6 @@ body {
   .SkillGrid .Outline p {
     margin: 0;
     padding: 1rem 1rem;
-    color: white;
     font-size: 20px;
     place-self: start;
   }
@@ -350,7 +366,7 @@ body {
 @media only screen and (min-width: 769px) {
   h1 {
     font-family: Courgette;
-    font-size: 60px;
+    font-size: 52px;
     margin-left: 2rem;
     margin-right: 2rem;
   }
@@ -381,34 +397,40 @@ body {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-areas: "name Mypicture" "tytle  Mypicture" "information Mypicture" "icons Mypicture";
-    min-height: 100vh;
+    height: 100vh;
   }
   .About h2 {
-    color: #d6a284;
     font-size: 26px;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   .About .name {
     grid-area: name;
     margin-left: 3rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .About .tytle {
     grid-area: tytle;
     margin-bottom: 0;
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
+    border-radius: 5%;
+    margin-left: 1rem;
   }
-  .About .tytle h2 {
-    color: #d6a284;
+  .About .tytle .Intro {
+    margin-bottom: 0;
   }
   .About .tytle .information {
     grid-area: information;
     order: 3;
     margin-top: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     margin-left: 3.5rem;
     margin-right: 3.5rem;
   }
-  .About .tytle .information span {
-    color: rgb(192, 255, 18);
+  .About .tytle .Phone {
+    display: none;
   }
   .About .icons {
     display: grid;
@@ -425,12 +447,13 @@ body {
   .About .icons .Logo {
     max-width: 40%;
     margin-bottom: 3rem;
+    border-radius: 5%;
   }
   .About .Mypicture {
     grid-area: Mypicture;
     justify-self: center;
     align-self: center;
-    max-width: 80%;
+    max-width: 70%;
   }
   .Project {
     height: 100vh;
@@ -485,7 +508,6 @@ body {
   .Skills .ShowMore {
     display: block;
     text-align: right;
-    color: white;
     margin-top: 3rem;
     padding-right: 3rem;
     text-decoration: underline;
@@ -495,19 +517,18 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 70vh;
     justify-items: center;
-    margin-top: rem;
   }
   .SkillGrid .Outline {
     display: grid;
     grid-template-rows: 0.5fr 3fr 7fr;
-    background-color: rgb(51, 67, 158);
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
     border-radius: 5%;
     width: 25vw;
     min-height: 60vh;
     place-items: center;
   }
   .SkillGrid .Outline h2 {
-    color: white;
     margin: 0.5rem;
   }
   .SkillGrid .Outline .image {
@@ -516,7 +537,6 @@ body {
   .SkillGrid .Outline p {
     margin: 0;
     padding: 1rem 1rem;
-    color: white;
     font-size: 20px;
     place-self: start;
   }

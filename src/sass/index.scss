@@ -19,7 +19,7 @@ body{
   h1 {
     display: block;
     font-family: Courgette;      
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
     }
 .Header{
@@ -53,55 +53,58 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     .name{
-      margin-bottom: 0;
+      margin: 1rem;
     }
     .tytle{
       order: 2;
-      margin-top: 1.5rem;
       margin-bottom: 0;
       align-self: start;
+      background-color: #00B4D8;
+      box-shadow: 10px 5px 5px #0077b6;      
+      border-radius: 5%;
       @include MarginLR(1.5rem);
-      h2{
-        color: #d6a284;
+      .Intro{
+        margin: 1rem 0.5rem 0 0.5rem;
+        margin-bottom: 0;
+        font-size: 20px;
       }
+      .PC{
+        display: none;
+       }      
    }
     .Mypicture{
       order: 1;
-      width: 80%;
+      width: 40%;
+      margin-bottom: 1rem;
     }
     .information{
       order: 3;
       margin-top: 0;
-      @include MarginLR(2rem);
+      @include MarginLR(1.5rem);
       margin-bottom: 1.5rem;
-      span{
-        color: rgb(192, 255, 18);
       }
-    }
     .icons{
       order: 4;
       display: grid;
       grid-template-columns: repeat(3,1fr);
       place-items: center;
-/*       grid-template-areas: 
-      "EmailP InstagramP LinkedInP"
-      "EmailLogo InstagramLogo LinkedInLogo"; */
       .iconName{
         display: flex;
         justify-content: center;
-        margin-bottom: 0;
+        margin: 1rem 0 0 0 ;
       }
       .Logo{
         width: 50%;
         margin-bottom: 3rem;
+        border-radius: 10%;
       }
     }
   }
 
   .Project{
-    min-height: 100vh;
+    height: 100vh;
     .title{
       display: block;
       border-top: 0.5px solid rgb(60, 24, 156);
@@ -138,17 +141,16 @@ body{
   }
 
   .Skills{
-    min-height: 100vh;
+    height: 100vh;
     .title{
       display: block;
       border-top: 0.5px solid rgb(60, 24, 156);
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
     .ShowMore{
       display: block;
       text-align: right;
-      color: white;
-      margin-top: 3rem;
+      margin-top: 2rem;
       padding-right: 3rem;
       text-decoration: underline;
     }
@@ -156,30 +158,32 @@ body{
   .SkillGrid{
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 5vh;
+    row-gap: 3vh;
     justify-items: center;
     .Outline{
       display: grid;
-      grid-template-rows: 0.5fr 3fr 7fr;
-      background-color: rgb(51, 67, 158);
+      grid-template-rows: auto;
+      background-color: #00B4D8;
+      box-shadow: 10px 5px 5px #0077b6;
       border-radius: 5%;
       width: 80vw;
-      height: 60vh;
       place-items: center;
       h2{
-        color: white;
-        margin: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
       }
       .image{
-        max-width: 90%;
+        max-width: 70%;
+        max-height: 80%;
       }
       p{
         margin: 0;
-        padding: 1rem 1rem;
-        color: white;
-        font-size: 20px;
+        padding: 0 1rem 1rem 1rem;
         place-self: start;
       }
+    }
+    .hide{
+      display: none;
     }
   }
 }
@@ -219,17 +223,18 @@ body{
   }
 
   .About{
-      h2{
-        color: #d6a284;
-      }
-      display: grid;
+    h2{
+      @include MarginLR(2rem);
+    }
+    display: grid;
     grid-template-columns:  3fr 2fr;
+    grid-template-rows: auto;
     grid-template-areas: 
     "name name"
     "tytle  Mypicture"
     "tytle Mypicture"
     "icons none";    
-    min-height: 100vh;
+    height: 100vh;
     .name{
       grid-area: name;
       @include MarginLR(3rem);
@@ -238,16 +243,25 @@ body{
     }
     .tytle{
       grid-area: tytle;
+      background-color: #00B4D8;
+      box-shadow: 10px 5px 5px #0077b6;      
+      border-radius: 5%;
+      @include MarginLR(2rem);
+      .Intro{
+        margin-bottom: 0;
+        margin-top: 2rem;
+      }
       .information{
         grid-area: information;
         @include MarginLR(2rem);
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
       }
-      }
+    }
     .icons{
       display: grid;
       grid-template-columns: repeat(3,1fr);
       place-items: center;
+      column-gap: 2rem;
       @include MarginLR(2rem);
       .iconName{
         display: flex;
@@ -256,8 +270,9 @@ body{
         margin-bottom: 0;
       }
       .Logo{
-        width: 50%;
+        width: 50px;
         margin-bottom: 5rem;
+        border-radius: 10%;
       }
     } 
     .Mypicture{
@@ -269,17 +284,18 @@ body{
       order: 3;
       margin-top: 0;
       @include MarginLR(3.5rem);
-      span{
-        color: rgb(192, 255, 18);
-      }
     }
-  }
+    .PC{
+      display: none;
+     }      
+}
 
   .Project{
-    max-height: 100vh;
+    height: 100vh;
     .title{
       display: block;
       border-top: 0.5px solid rgb(60, 24, 156);
+      margin-bottom: 1rem;
     }
     .ProjectGrid{
       display: grid;
@@ -323,7 +339,6 @@ body{
     .ShowMore{
       display: block;
       text-align: right;
-      color: white;
       margin-top: 3rem;
       padding-right: 3rem;
       text-decoration: underline;
@@ -338,13 +353,13 @@ body{
     .Outline{
       display: grid;
       grid-template-rows: 0.5fr 3fr 7fr;
-      background-color: rgb(51, 67, 158);
+      background-color: #00B4D8;
+      box-shadow: 10px 5px 5px #0077b6;
       border-radius: 5%;
       width: 40vw;
       min-height: 60vh;
       place-items: center;
       h2{
-        color: white;
         margin: 0.5rem;
       }
       .image{
@@ -353,7 +368,6 @@ body{
       p{
         margin: 0;
         padding: 1rem 1rem;
-        color: white;
         font-size: 20px;
         place-self: start;
       }
@@ -367,7 +381,7 @@ body{
 @media only screen and (min-width:769px){
   h1 {
     font-family: Courgette;      
-    font-size: 60px;
+    font-size: 52px;
     @include MarginLR(2rem);
   }
 
@@ -397,8 +411,8 @@ body{
 
   .About{
     h2{
-      color: #d6a284;
       font-size: 26px;
+      @include MarginLR(2rem);
     }
     display: grid;
     grid-template-columns:  3fr 2fr;
@@ -407,28 +421,33 @@ body{
     "tytle  Mypicture"
     "information Mypicture"
     "icons Mypicture";    
-    min-height: 100vh;
+    height: 100vh;
     .name{
       grid-area: name;
       margin-left: 3rem;
-      margin-top: 3rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
     .tytle{
       grid-area: tytle;
       margin-bottom: 0;
-      h2{
-        color: #d6a284;
+      background-color: #00B4D8;
+      box-shadow: 10px 5px 5px #0077b6;      
+      border-radius: 5%;
+      margin-left: 1rem;
+      .Intro{
+        margin-bottom: 0;
       }
       .information{
         grid-area: information;
         order: 3;
         margin-top: 0;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
         @include MarginLR(3.5rem);  
-        span{
-          color: rgb(192, 255, 18);
-        }
       }
+      .Phone{
+        display: none;
+       }        
     }
     .icons{
       display: grid;
@@ -443,6 +462,7 @@ body{
       .Logo{
         max-width: 40%;
         margin-bottom: 3rem;
+        border-radius: 5%;
       }
     }
 
@@ -450,7 +470,7 @@ body{
       grid-area: Mypicture;
       justify-self: center;
       align-self: center;
-      max-width: 80%;
+      max-width: 70%;
     }
   }
 
@@ -506,7 +526,6 @@ body{
     .ShowMore{
       display: block;
       text-align: right;
-      color: white;
       margin-top: 3rem;
       padding-right: 3rem;
       text-decoration: underline;
@@ -517,17 +536,16 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 70vh;
     justify-items: center;
-    margin-top: rem;
     .Outline{
       display: grid;
       grid-template-rows: 0.5fr 3fr 7fr;
-      background-color: rgb(51, 67, 158);
+      background-color: #00B4D8;
+      box-shadow: 10px 5px 5px #0077b6;
       border-radius: 5%;
       width: 25vw;
       min-height: 60vh;
       place-items: center;
       h2{
-        color: white;
         margin: 0.5rem;
       }
       .image{
@@ -536,7 +554,6 @@ body{
       p{
         margin: 0;
         padding: 1rem 1rem;
-        color: white;
         font-size: 20px;
         place-self: start;
       }

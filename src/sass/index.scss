@@ -186,6 +186,56 @@ body{
       display: none;
     }
   }
+  
+  .WorkExperience{
+    height: 100vh;
+    .title{
+      display: block;
+      border-top: 0.5px solid rgb(60, 24, 156);
+      margin-top: 2rem;
+    }
+    .ShowMore{
+      display: block;
+      text-align: right;
+      margin-top: 2rem;
+      padding-right: 3rem;
+      text-decoration: underline;
+    }
+    .WorkGrid{
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 3vh;
+      justify-items: center;
+      .Outline{
+        display: grid;
+        grid-template-rows: auto;
+        background-color: #00B4D8;
+        box-shadow: 10px 5px 5px #0077b6;
+        border-radius: 5%;
+        width: 80vw;
+        place-items: center;
+        h2{
+          margin-top: 0.5rem;
+          margin-bottom: 0;
+        }
+        .image{
+          max-width: 70%;
+          max-height: 80%;
+        }
+        p{
+          margin: 0;
+          padding: 0 1rem 1rem 1rem;
+          place-self: start;
+        }
+        .PC{
+          display: none;
+        }
+      }
+      .hide{
+        display: none;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width:426px) and (max-width:768px){
@@ -375,7 +425,58 @@ body{
     .hide{
       display: none;
     }
-}
+  }
+
+  .WorkExperience{
+    height: 100vh;
+    .title{
+      display: block;
+      border-top: 0.5px solid rgb(60, 24, 156);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    .ShowMore{
+      display: block;
+      text-align: right;
+      margin-top: 2rem;
+      padding-right: 3rem;
+      text-decoration: underline;
+    }
+    .WorkGrid{
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 3vh;
+      justify-items: center;
+      .Outline{
+        display: grid;
+        grid-template-rows: auto;
+        background-color: #00B4D8;
+        box-shadow: 10px 5px 5px #0077b6;
+        border-radius: 5%;
+        width: 80vw;
+        place-items: center;
+        h2{
+          margin-top: 0.5rem;
+          margin-bottom: 0;
+        }
+        .image{
+          max-width: 70%;
+          max-height: 80%;
+        }
+        p{
+          margin: 0;
+          padding: 0 2rem 1rem 2rem;
+          place-self: start;
+        }
+        .PC{
+          display: none;
+        }
+      }
+      .hide{
+        display: none;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width:769px){
@@ -560,4 +661,52 @@ body{
     }
   }
 
+  .WorkExperience{
+    min-height: 100vh;
+    .title{
+      display: block;
+      border-top: 0.5px solid rgb(60, 24, 156);
+      margin-top: 3rem;
+      padding-left: 3rem;
+    }
+    .ShowMore{
+      display: block;
+      text-align: right;
+      margin-top: 3rem;
+      padding-right: 3rem;
+      text-decoration: underline;
+    }
+    .WorkGrid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 70vh;
+      justify-items: center;
+      .Outline{
+        display: grid;
+        grid-template-rows: 0.5fr 3fr 7fr;
+        background-color: #00B4D8;
+        box-shadow: 10px 5px 5px #0077b6;
+        border-radius: 5%;
+        width: 35vw;
+        min-height: 60vh;
+        margin-top: 2rem;
+        place-items: center;
+        h2{
+          margin: 0.5rem;
+        }
+        .image{
+          width: 90%;
+        }
+        p{
+          margin: 0;
+          padding: 1rem 2rem;
+          font-size: 20px;
+          place-self: start;
+        }
+        .Phone{
+          display: none;
+        }
+      }
+    }
+  }
 }

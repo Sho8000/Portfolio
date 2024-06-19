@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -150,13 +154,13 @@ body {
     padding-right: 3rem;
     text-decoration: underline;
   }
-  .SkillGrid {
+  .Skills .SkillGrid {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 3vh;
     justify-items: center;
   }
-  .SkillGrid .Outline {
+  .Skills .SkillGrid .Outline {
     display: grid;
     grid-template-rows: auto;
     background-color: #00B4D8;
@@ -165,20 +169,20 @@ body {
     width: 80vw;
     place-items: center;
   }
-  .SkillGrid .Outline h2 {
+  .Skills .SkillGrid .Outline h2 {
     margin-top: 0.5rem;
     margin-bottom: 0;
   }
-  .SkillGrid .Outline .image {
+  .Skills .SkillGrid .Outline .image {
     max-width: 70%;
     max-height: 80%;
   }
-  .SkillGrid .Outline p {
+  .Skills .SkillGrid .Outline p {
     margin: 0;
     padding: 0 1rem 1rem 1rem;
     place-self: start;
   }
-  .SkillGrid .hide {
+  .Skills .SkillGrid .hide {
     display: none;
   }
   .WorkExperience {
@@ -229,6 +233,61 @@ body {
   }
   .WorkExperience .WorkGrid .hide {
     display: none;
+  }
+  .ContactMe {
+    height: 100vh;
+  }
+  .ContactMe .title {
+    display: block;
+    border-top: 0.5px solid rgb(60, 24, 156);
+    margin-top: 2rem;
+  }
+  .ContactMe .ContactGrid {
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: 35vh 45vh;
+    justify-content: center;
+  }
+  .ContactMe .ContactGrid .AccountArea {
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
+    border-radius: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  .ContactMe .ContactGrid .AccountArea .Account {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: #90e0ef;
+    box-shadow: 5px 5px 5px #0077b6;
+    padding: 0.3rem;
+    margin-top: 1rem;
+  }
+  .ContactMe .ContactGrid .AccountArea .Account p {
+    margin: 0;
+  }
+  .ContactMe .ContactGrid .AccountArea .Account p img {
+    position: absolute;
+    max-height: 70%;
+    width: auto;
+  }
+  .ContactMe .ContactGrid .AccountArea .Account p .LinkLogo {
+    box-shadow: 1px 1px 1px #0077b6;
+  }
+  .ContactMe .ContactGrid .SendMessage {
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
+    border-radius: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {

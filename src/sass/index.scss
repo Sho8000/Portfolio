@@ -16,21 +16,28 @@ body{
 }
 
 @media only screen and (max-width:425px){
-  h1 {
-    display: block;
-    font-family: Courgette;      
-    font-size: 32px;
-    text-align: center;
-    }
+h1 {
+  display: block;
+  font-family: Courgette;      
+  font-size: 32px;
+  text-align: center;
+}
+.TopLink{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: solid 1px rgb(60, 24, 156);
+  background-image: linear-gradient(to right top, #48cae4, #59cee6, #67d3e8, #75d7ea, #81dbec, #8cdeee, #96e1ef, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);
+  position: sticky;
+  top: 0;
+}
+
+#PC{
+  display: none;
+}
 .Header{
-    display: flex;
-    flex-direction: column;
-    h2{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      border-bottom: solid 1px rgb(60, 24, 156);
-    }
+  display: flex;
+  flex-direction: column;
   nav{
     display: flex;
     flex-direction: column;
@@ -239,6 +246,9 @@ body{
 }
 
 @media only screen and (min-width:426px) and (max-width:768px){
+  #Phone{
+    display: none;
+  }  
   h1 {
     font-family: Courgette;      
     font-size: 48px;
@@ -247,7 +257,9 @@ body{
     margin-top: 1rem;
   }
   .Header{
-    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to right top, #48cae4, #59cee6, #67d3e8, #75d7ea, #81dbec, #8cdeee, #96e1ef, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);       padding: 0 1.5rem;
     h2{
       margin-top: 0;
       margin-bottom: 0;
@@ -260,7 +272,7 @@ body{
       p{
         display: inline-block;
         text-decoration: underline;
-        margin-right: 1rem;
+        margin-right: 0.1rem;
         margin-left: 0.5rem;
 
       }
@@ -480,6 +492,9 @@ body{
 }
 
 @media only screen and (min-width:769px){
+  #Phone{
+    display: none;
+  }  
   h1 {
     font-family: Courgette;      
     font-size: 52px;
@@ -487,7 +502,9 @@ body{
   }
 
   .Header{
-    display: grid;
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to right top, #48cae4, #59cee6, #67d3e8, #75d7ea, #81dbec, #8cdeee, #96e1ef, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);    display: grid;
     grid-template-columns: 2fr 3fr;
     align-items: center;
     border-bottom: 0.5px solid rgb(60, 24, 156);

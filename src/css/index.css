@@ -249,7 +249,7 @@ body {
     justify-content: center;
   }
   .ContactMe .ContactGrid .AccountArea {
-    background-color: #00B4D8;
+    background-color: #48CAE4;
     box-shadow: 10px 5px 5px #0077b6;
     border-radius: 5%;
     padding-top: 1rem;
@@ -261,8 +261,8 @@ body {
     justify-content: space-between;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    background-color: #90e0ef;
-    box-shadow: 5px 5px 5px #0077b6;
+    background-color: #00B4D8;
+    box-shadow: inset 5px 5px 5px #0077b6;
     padding: 0.3rem;
     margin-top: 1rem;
   }
@@ -278,7 +278,7 @@ body {
     box-shadow: 1px 1px 1px #0077b6;
   }
   .ContactMe .ContactGrid .SendMessage {
-    background-color: #00B4D8;
+    background-color: #48CAE4;
     box-shadow: 10px 5px 5px #0077b6;
     border-radius: 5%;
     padding-top: 1rem;
@@ -532,6 +532,68 @@ body {
   .WorkExperience .WorkGrid .hide {
     display: none;
   }
+  .ContactMe {
+    height: 100vh;
+  }
+  .ContactMe .title {
+    display: block;
+    border-top: 0.5px solid rgb(60, 24, 156);
+    margin-top: 2rem;
+  }
+  .ContactMe .ContactGrid {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 70vh;
+    column-gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 2rem 0;
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
+    border-radius: 5%;
+  }
+  .ContactMe .ContactGrid .AccountArea {
+    background-color: #48CAE4;
+    box-shadow: 5px 5px 5px #0077b6;
+    border-radius: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  .ContactMe .ContactGrid .AccountArea .Account {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: #00B4D8;
+    box-shadow: inset 5px 5px 5px #0077b6;
+    padding: 0.3rem;
+    margin-top: 1rem;
+  }
+  .ContactMe .ContactGrid .AccountArea .Account p {
+    margin: 0;
+  }
+  .ContactMe .ContactGrid .AccountArea .Account p img {
+    position: absolute;
+    max-height: 70%;
+    width: auto;
+  }
+  .ContactMe .ContactGrid .AccountArea .Account p .LinkLogo {
+    box-shadow: 1px 1px 1px #0077b6;
+  }
+  .ContactMe .ContactGrid .SendMessage {
+    background-color: #48CAE4;
+    box-shadow: 5px 5px 5px #0077b6;
+    border-radius: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media only screen and (min-width: 769px) {
   #Phone {
@@ -763,6 +825,69 @@ body {
   }
   .WorkExperience .WorkGrid .Outline .Phone {
     display: none;
+  }
+  .ContactMe {
+    height: 100vh;
+  }
+  .ContactMe .title {
+    display: block;
+    border-top: 0.5px solid rgb(60, 24, 156);
+    margin-top: 2rem;
+  }
+  .ContactMe .ContactGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 70vh;
+    column-gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem 2rem;
+    background-color: #00B4D8;
+    box-shadow: 10px 5px 5px #0077b6;
+    border-radius: 5%;
+    max-width: 100%;
+  }
+  .ContactMe .ContactGrid .AccountArea {
+    background-color: #48CAE4;
+    box-shadow: 5px 5px 5px #0077b6;
+    border-radius: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  .ContactMe .ContactGrid .AccountArea .Account {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: #00B4D8;
+    box-shadow: inset 5px 5px 5px #0077b6;
+    padding: 0.3rem;
+    margin-top: 1rem;
+  }
+  .ContactMe .ContactGrid .AccountArea .Account p {
+    margin: 0;
+  }
+  .ContactMe .ContactGrid .AccountArea .Account p img {
+    position: absolute;
+    max-height: 70%;
+    width: auto;
+  }
+  .ContactMe .ContactGrid .AccountArea .Account p .LinkLogo {
+    box-shadow: 1px 1px 1px #0077b6;
+  }
+  .ContactMe .ContactGrid .SendMessage {
+    background-color: #48CAE4;
+    box-shadow: 5px 5px 5px #0077b6;
+    border-radius: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 

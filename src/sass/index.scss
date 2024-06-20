@@ -12,6 +12,19 @@ html{
   scroll-behavior: smooth;
 }
 
+a{
+  color: blue;
+  font-weight: bold;
+}
+a:hover{
+  background-size: contain;
+  color: blue;
+}
+a:visited{
+  color: rgb(221, 96, 96);
+}
+
+
 body{
   padding: 0;
   margin: 0;
@@ -20,43 +33,42 @@ body{
 }
 
 @media only screen and (max-width:425px){
-h1 {
-  display: block;
-  font-family: Courgette;      
-  font-size: 32px;
-  text-align: center;
-}
-.TopLink{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  border-bottom: solid 1px rgb(60, 24, 156);
-  background-image: linear-gradient(to right top, #48cae4, #59cee6, #67d3e8, #75d7ea, #81dbec, #8cdeee, #96e1ef, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);
-  position: sticky;
-  top: 0;
-}
+  html{
+    scroll-padding-top: 4rem;
+  }
+  h1 {
+    display: block;
+    font-family: Courgette;      
+    font-size: 32px;
+    text-align: center;
+  }
+  .TopLink{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: solid 1px rgb(60, 24, 156);
+    background-image: linear-gradient(to right top, #48cae4, #59cee6, #67d3e8, #75d7ea, #81dbec, #8cdeee, #96e1ef, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);
+    position: sticky;
+    top: 0;
+    z-index: 200;
+  }
 
-#PC{
-  display: none;
-}
-.Header{
-  display: flex;
-  flex-direction: column;
-  nav{
+  #PC{
+    display: none;
+  }
+  .Header{
     display: flex;
     flex-direction: column;
-    height: 14vh;
-    flex-wrap: wrap;
-    border-bottom: solid 1px rgb(60, 24, 156);
-    p{
-      margin-left: 2rem;
-      text-decoration: underline;
-    }
-    p:hover{
-      background-size: contain;
-      background-color: white;
-      color: blue;
-    }
+    nav{
+      display: flex;
+      flex-direction: column;
+      height: 14vh;
+      flex-wrap: wrap;
+      border-bottom: solid 1px rgb(60, 24, 156);
+      p{
+        margin-left: 2rem;
+        text-decoration: underline;
+      }
     }
   }
 
@@ -306,6 +318,9 @@ h1 {
 }
 
 @media only screen and (min-width:426px) and (max-width:768px){
+  html{
+    scroll-padding-top: 7rem;
+  }
   #Phone{
     display: none;
   }  
@@ -319,7 +334,8 @@ h1 {
   .Header{
     position: sticky;
     top: 0;
-    background-image: linear-gradient(to right top, #48cae4, #59cee6, #67d3e8, #75d7ea, #81dbec, #8cdeee, #96e1ef, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);       padding: 0 1.5rem;
+    z-index: 200;
+    background-image: linear-gradient(to right top, #48cae4, #59cee6, #67d3e8, #75d7ea, #81dbec, #8cdeee, #96e1ef, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);       
     h2{
       margin-top: 0;
       margin-bottom: 0;
@@ -334,12 +350,6 @@ h1 {
         text-decoration: underline;
         margin-right: 0.1rem;
         margin-left: 0.5rem;
-
-      }
-      p:hover{
-        background-size: contain;
-        background-color: white;
-        color: blue;
       }
     }
   }
@@ -456,7 +466,6 @@ h1 {
       display: block;
       border-top: 0.5px solid rgb(60, 24, 156);
       margin-top: 3rem;
-      padding-left: 3rem;
     }
     .ShowMore{
       display: block;
@@ -465,37 +474,37 @@ h1 {
       padding-right: 3rem;
       text-decoration: underline;
     }
-  }
-  .SkillGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70vh;
-    justify-items: center;
-    margin-top: rem;
-    .Outline{
+    .SkillGrid{
       display: grid;
-      grid-template-rows: 0.5fr 3fr 7fr;
-      background-color: #00B4D8;
-      box-shadow: 10px 5px 5px #0077b6;
-      border-radius: 5%;
-      width: 40vw;
-      min-height: 60vh;
-      place-items: center;
-      h2{
-        margin: 0.5rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 70vh;
+      justify-items: center;
+      margin-top: rem;
+      .Outline{
+        display: grid;
+        grid-template-rows: 0.5fr 3fr 7fr;
+        background-color: #00B4D8;
+        box-shadow: 10px 5px 5px #0077b6;
+        border-radius: 5%;
+        width: 40vw;
+        min-height: 60vh;
+        place-items: center;
+        h2{
+          margin: 0.5rem;
+        }
+        .image{
+          max-width: 90%;
+        }
+        p{
+          margin: 0;
+          padding: 1rem 1rem;
+          font-size: 20px;
+          place-self: start;
+        }
       }
-      .image{
-        max-width: 90%;
+      .hide{
+        display: none;
       }
-      p{
-        margin: 0;
-        padding: 1rem 1rem;
-        font-size: 20px;
-        place-self: start;
-      }
-    }
-    .hide{
-      display: none;
     }
   }
 
@@ -614,6 +623,9 @@ h1 {
 }
 
 @media only screen and (min-width:769px){
+  html{
+    scroll-padding-top: 4rem;
+  }
   #Phone{
     display: none;
   }  
@@ -626,6 +638,7 @@ h1 {
   .Header{
     position: sticky;
     top: 0;
+    z-index: 200;
     background-image: linear-gradient(to right top, #48cae4, #59cee6, #67d3e8, #75d7ea, #81dbec, #8cdeee, #96e1ef, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);    display: grid;
     grid-template-columns: 2fr 3fr;
     align-items: center;
@@ -641,11 +654,6 @@ h1 {
         margin-right: 1.5rem;
         text-decoration: underline;
       }
-      p:hover{
-        background-size: contain;
-        background-color: white;
-        color: blue;
-      }
     }
   }
 
@@ -659,7 +667,6 @@ h1 {
     grid-template-areas: 
     "name Mypicture"
     "tytle  Mypicture"
-    "information Mypicture"
     "icons Mypicture";    
     height: 100vh;
     .name{
@@ -679,7 +686,6 @@ h1 {
         margin-bottom: 0;
       }
       .information{
-        grid-area: information;
         order: 3;
         margin-top: 0;
         margin-bottom: 1rem;
@@ -698,11 +704,13 @@ h1 {
         display: flex;
         justify-content: center;
         margin-bottom: 0;
+        place-self: end center;
       }
       .Logo{
         max-width: 40%;
         margin-bottom: 3rem;
-        border-radius: 5%;
+        border-radius: 15%;
+        place-self: start center;
       }
     }
 
@@ -770,32 +778,32 @@ h1 {
       padding-right: 3rem;
       text-decoration: underline;
     }
-  }
-  .SkillGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70vh;
-    justify-items: center;
-    .Outline{
+    .SkillGrid{
       display: grid;
-      grid-template-rows: 0.5fr 3fr 7fr;
-      background-color: #00B4D8;
-      box-shadow: 10px 5px 5px #0077b6;
-      border-radius: 5%;
-      width: 25vw;
-      min-height: 60vh;
-      place-items: center;
-      h2{
-        margin: 0.5rem;
-      }
-      .image{
-        max-width: 90%;
-      }
-      p{
-        margin: 0;
-        padding: 1rem 1rem;
-        font-size: 20px;
-        place-self: start;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 70vh;
+      justify-items: center;
+      .Outline{
+        display: grid;
+        grid-template-rows: 0.5fr 3fr 7fr;
+        background-color: #00B4D8;
+        box-shadow: 10px 5px 5px #0077b6;
+        border-radius: 5%;
+        width: 25vw;
+        min-height: 60vh;
+        place-items: center;
+        h2{
+          margin: 0.5rem;
+        }
+        .image{
+          max-width: 90%;
+        }
+        p{
+          margin: 0;
+          padding: 1rem 1rem;
+          font-size: 20px;
+          place-self: start;
+        }
       }
     }
   }
@@ -912,3 +920,19 @@ h1 {
     }
   }
 }
+
+.Footer{
+  .title{
+    h1{
+      text-align: center;
+    }
+    border-top: 0.5px solid rgb(60, 24, 156);
+    margin-top: 3rem;
+  }
+  .copyRight{
+    p{
+      text-align: center;
+    }
+  }
+}
+

@@ -2,6 +2,20 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  color: blue;
+  font-weight: bold;
+}
+
+a:hover {
+  background-size: contain;
+  color: blue;
+}
+
+a:visited {
+  color: rgb(221, 96, 96);
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -10,6 +24,9 @@ body {
 }
 
 @media only screen and (max-width: 425px) {
+  html {
+    scroll-padding-top: 4rem;
+  }
   h1 {
     display: block;
     font-family: Courgette;
@@ -24,6 +41,7 @@ body {
     background-image: linear-gradient(to right top, #48cae4, #59cee6, #67d3e8, #75d7ea, #81dbec, #8cdeee, #96e1ef, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);
     position: sticky;
     top: 0;
+    z-index: 200;
   }
   #PC {
     display: none;
@@ -42,11 +60,6 @@ body {
   .Header nav p {
     margin-left: 2rem;
     text-decoration: underline;
-  }
-  .Header nav p:hover {
-    background-size: contain;
-    background-color: white;
-    color: blue;
   }
   .About {
     display: flex;
@@ -291,6 +304,9 @@ body {
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
+  html {
+    scroll-padding-top: 7rem;
+  }
   #Phone {
     display: none;
   }
@@ -305,8 +321,8 @@ body {
   .Header {
     position: sticky;
     top: 0;
+    z-index: 200;
     background-image: linear-gradient(to right top, #48cae4, #59cee6, #67d3e8, #75d7ea, #81dbec, #8cdeee, #96e1ef, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);
-    padding: 0 1.5rem;
   }
   .Header h2 {
     margin-top: 0;
@@ -322,11 +338,6 @@ body {
     text-decoration: underline;
     margin-right: 0.1rem;
     margin-left: 0.5rem;
-  }
-  .Header nav p:hover {
-    background-size: contain;
-    background-color: white;
-    color: blue;
   }
   .About {
     display: grid;
@@ -441,7 +452,6 @@ body {
     display: block;
     border-top: 0.5px solid rgb(60, 24, 156);
     margin-top: 3rem;
-    padding-left: 3rem;
   }
   .Skills .ShowMore {
     display: block;
@@ -450,14 +460,14 @@ body {
     padding-right: 3rem;
     text-decoration: underline;
   }
-  .SkillGrid {
+  .Skills .SkillGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 70vh;
     justify-items: center;
     margin-top: rem;
   }
-  .SkillGrid .Outline {
+  .Skills .SkillGrid .Outline {
     display: grid;
     grid-template-rows: 0.5fr 3fr 7fr;
     background-color: #00B4D8;
@@ -467,19 +477,19 @@ body {
     min-height: 60vh;
     place-items: center;
   }
-  .SkillGrid .Outline h2 {
+  .Skills .SkillGrid .Outline h2 {
     margin: 0.5rem;
   }
-  .SkillGrid .Outline .image {
+  .Skills .SkillGrid .Outline .image {
     max-width: 90%;
   }
-  .SkillGrid .Outline p {
+  .Skills .SkillGrid .Outline p {
     margin: 0;
     padding: 1rem 1rem;
     font-size: 20px;
     place-self: start;
   }
-  .SkillGrid .hide {
+  .Skills .SkillGrid .hide {
     display: none;
   }
   .WorkExperience {
@@ -596,6 +606,9 @@ body {
   }
 }
 @media only screen and (min-width: 769px) {
+  html {
+    scroll-padding-top: 4rem;
+  }
   #Phone {
     display: none;
   }
@@ -608,6 +621,7 @@ body {
   .Header {
     position: sticky;
     top: 0;
+    z-index: 200;
     background-image: linear-gradient(to right top, #48cae4, #59cee6, #67d3e8, #75d7ea, #81dbec, #8cdeee, #96e1ef, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -626,15 +640,10 @@ body {
     margin-right: 1.5rem;
     text-decoration: underline;
   }
-  .Header nav p:hover {
-    background-size: contain;
-    background-color: white;
-    color: blue;
-  }
   .About {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-areas: "name Mypicture" "tytle  Mypicture" "information Mypicture" "icons Mypicture";
+    grid-template-areas: "name Mypicture" "tytle  Mypicture" "icons Mypicture";
     height: 100vh;
   }
   .About h2 {
@@ -660,7 +669,6 @@ body {
     margin-bottom: 0;
   }
   .About .tytle .information {
-    grid-area: information;
     order: 3;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -681,11 +689,13 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 0;
+    place-self: end center;
   }
   .About .icons .Logo {
     max-width: 40%;
     margin-bottom: 3rem;
-    border-radius: 5%;
+    border-radius: 15%;
+    place-self: start center;
   }
   .About .Mypicture {
     grid-area: Mypicture;
@@ -750,13 +760,13 @@ body {
     padding-right: 3rem;
     text-decoration: underline;
   }
-  .SkillGrid {
+  .Skills .SkillGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 70vh;
     justify-items: center;
   }
-  .SkillGrid .Outline {
+  .Skills .SkillGrid .Outline {
     display: grid;
     grid-template-rows: 0.5fr 3fr 7fr;
     background-color: #00B4D8;
@@ -766,13 +776,13 @@ body {
     min-height: 60vh;
     place-items: center;
   }
-  .SkillGrid .Outline h2 {
+  .Skills .SkillGrid .Outline h2 {
     margin: 0.5rem;
   }
-  .SkillGrid .Outline .image {
+  .Skills .SkillGrid .Outline .image {
     max-width: 90%;
   }
-  .SkillGrid .Outline p {
+  .Skills .SkillGrid .Outline p {
     margin: 0;
     padding: 1rem 1rem;
     font-size: 20px;
@@ -889,6 +899,16 @@ body {
     justify-content: center;
     align-items: center;
   }
+}
+.Footer .title {
+  border-top: 0.5px solid rgb(60, 24, 156);
+  margin-top: 3rem;
+}
+.Footer .title h1 {
+  text-align: center;
+}
+.Footer .copyRight p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

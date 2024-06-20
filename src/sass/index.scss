@@ -86,7 +86,7 @@ body{
       align-self: start;
       background-color: #00B4D8;
       box-shadow: 10px 5px 5px #0077b6;      
-      border-radius: 5%;
+      border-radius: 20px;
       @include MarginLR(1.5rem);
       .Intro{
         margin: 1rem 0.5rem 0 0.5rem;
@@ -121,7 +121,7 @@ body{
       .Logo{
         width: 50%;
         margin-bottom: 3rem;
-        border-radius: 10%;
+        border-radius: 10px;
       }
     }
   }
@@ -143,7 +143,7 @@ body{
         grid-template-rows: 1fr 3fr;
         background-color: #00B4D8;
         box-shadow: 10px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         width: 45vw;
         place-items: center;
         h2{
@@ -187,7 +187,7 @@ body{
         grid-template-rows: auto;
         background-color: #00B4D8;
         box-shadow: 10px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         width: 80vw;
         place-items: center;
         h2{
@@ -234,7 +234,7 @@ body{
         grid-template-rows: auto;
         background-color: #00B4D8;
         box-shadow: 10px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         width: 80vw;
         place-items: center;
         h2{
@@ -275,7 +275,7 @@ body{
       .AccountArea{
         background-color: #48CAE4;
         box-shadow: 10px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
         .Account{
@@ -304,7 +304,7 @@ body{
       .SendMessage{
         background-color: #48CAE4; 
         box-shadow: 10px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
         margin-top: 2rem;
@@ -377,7 +377,7 @@ body{
       grid-area: tytle;
       background-color: #00B4D8;
       box-shadow: 10px 5px 5px #0077b6;      
-      border-radius: 5%;
+      border-radius: 20px;
       @include MarginLR(2rem);
       .Intro{
         margin-bottom: 0;
@@ -404,7 +404,7 @@ body{
       .Logo{
         width: 50px;
         margin-bottom: 5rem;
-        border-radius: 10%;
+        border-radius: 10px;
       }
     } 
     .Mypicture{
@@ -439,7 +439,7 @@ body{
         grid-template-rows: 1fr 3.5fr;
         background-color: #00B4D8;
         box-shadow: 10px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         width: 40vw;
         place-items: center;
         h2{
@@ -485,7 +485,7 @@ body{
         grid-template-rows: 0.5fr 3fr 7fr;
         background-color: #00B4D8;
         box-shadow: 10px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         width: 40vw;
         min-height: 60vh;
         place-items: center;
@@ -533,7 +533,7 @@ body{
         grid-template-rows: auto;
         background-color: #00B4D8;
         box-shadow: 10px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         width: 80vw;
         place-items: center;
         h2{
@@ -577,11 +577,11 @@ body{
       padding: 2rem 0;
       background-color: #00B4D8;
       box-shadow: 10px 5px 5px #0077b6;
-      border-radius: 5%;
+      border-radius: 20px;
       .AccountArea{
         background-color: #48CAE4;
         box-shadow: 5px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
         .Account{
@@ -610,7 +610,7 @@ body{
       .SendMessage{
         background-color: #48CAE4;
         box-shadow: 5px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
         display: flex;
@@ -680,7 +680,7 @@ body{
       margin-bottom: 0;
       background-color: #00B4D8;
       box-shadow: 10px 5px 5px #0077b6;      
-      border-radius: 5%;
+      border-radius: 20px;
       margin-left: 1rem;
       .Intro{
         margin-bottom: 0;
@@ -709,7 +709,7 @@ body{
       .Logo{
         max-width: 40%;
         margin-bottom: 3rem;
-        border-radius: 15%;
+        border-radius: 10px;
         place-self: start center;
       }
     }
@@ -740,7 +740,7 @@ body{
         grid-template-rows: 1fr 4fr;
         background-color: #00B4D8;
         box-shadow: 10px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         width: 28vw;
         max-width: 450px;
         margin-top: 2rem;
@@ -788,7 +788,7 @@ body{
         grid-template-rows: 0.5fr 3fr 7fr;
         background-color: #00B4D8;
         box-shadow: 10px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         width: 25vw;
         min-height: 60vh;
         place-items: center;
@@ -833,7 +833,7 @@ body{
         grid-template-rows: 0.5fr 3fr 7fr;
         background-color: #00B4D8;
         box-shadow: 10px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         width: 35vw;
         min-height: 60vh;
         margin-top: 2rem;
@@ -875,12 +875,12 @@ body{
       padding: 2rem 2rem;
       background-color: #00B4D8;
       box-shadow: 10px 5px 5px #0077b6;
-      border-radius: 5%;
+      border-radius: 20px;
       max-width: 100%;
       .AccountArea{
         background-color: #48CAE4;
         box-shadow: 5px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
         .Account{
@@ -909,7 +909,7 @@ body{
       .SendMessage{
         background-color: #48CAE4;
         box-shadow: 5px 5px 5px #0077b6;
-        border-radius: 5%;
+        border-radius: 20px;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
         display: flex;

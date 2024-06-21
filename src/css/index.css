@@ -5,11 +5,7 @@ html {
 a {
   color: blue;
   font-weight: bold;
-}
-
-a:hover {
-  background-size: contain;
-  color: blue;
+  text-decoration: none;
 }
 
 a:visited {
@@ -57,9 +53,20 @@ body {
     flex-wrap: wrap;
     border-bottom: solid 1px rgb(60, 24, 156);
   }
+  .Header nav a:hover {
+    background-size: contain;
+    color: blue;
+    transform: scale(1.1);
+  }
+  .Header nav a:hover p {
+    display: flex;
+    align-items: end;
+    height: 20%;
+    background-color: #6bc6e1;
+    margin-right: 1rem;
+  }
   .Header nav p {
     margin-left: 2rem;
-    text-decoration: underline;
   }
   .About {
     display: flex;
@@ -353,10 +360,24 @@ body {
   }
   .Header nav {
     border-bottom: 0.5px solid rgb(60, 24, 156);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+    column-gap: 0.5rem;
+  }
+  .Header nav a:hover {
+    background-size: contain;
+    color: blue;
+    transform: scale(1.1);
+  }
+  .Header nav a:hover p {
+    display: flex;
+    align-items: end;
+    height: 20%;
+    background-color: #6bc6e1;
+    margin-right: 1rem;
   }
   .Header nav p {
-    display: inline-block;
-    text-decoration: underline;
     margin-right: 0.1rem;
     margin-left: 0.5rem;
   }
@@ -676,9 +697,20 @@ body {
     display: flex;
     justify-content: flex-end;
   }
+  .Header nav a:hover {
+    background-size: contain;
+    color: blue;
+    transform: scale(1.1);
+  }
+  .Header nav a:hover p {
+    display: flex;
+    align-items: end;
+    height: 20%;
+    background-color: #6bc6e1;
+    margin-right: 1rem;
+  }
   .Header nav p {
     margin-right: 1.5rem;
-    text-decoration: underline;
   }
   .About {
     display: grid;
@@ -970,6 +1002,10 @@ body {
 }
 .Footer .copyRight p {
   text-align: center;
+}
+
+.ContactMe .Account p {
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=index.css.map */

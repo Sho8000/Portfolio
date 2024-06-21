@@ -105,15 +105,24 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    margin-top: 2rem;
+    column-gap: 0.5rem;
+  }
+  .About .icons a {
+    text-decoration: none;
+  }
+  .About .icons :active {
+    transform: translate(0, 2px);
   }
   .About .icons .iconName {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 1rem 0 0 0;
+    align-items: center;
   }
-  .About .icons .Logo {
+  .About .icons .iconName .Logo {
     width: 50%;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
   }
   .Project {
@@ -378,20 +387,27 @@ body {
   .About .icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    place-items: center;
     column-gap: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .About .icons a {
+    text-decoration: none;
+  }
+  .About .icons :active {
+    transform: translate(0, 2px);
+  }
   .About .icons .iconName {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-self: flex-end;
+    align-items: center;
     margin-bottom: 0;
+    min-width: 80px;
   }
-  .About .icons .Logo {
+  .About .icons .iconName .Logo {
     width: 50px;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
   }
   .About .Mypicture {
@@ -685,17 +701,23 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .About .icons a {
+    text-decoration: none;
+  }
+  .About .icons :active {
+    transform: translate(0, 2px);
+  }
   .About .icons .iconName {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 0;
-    place-self: end center;
   }
-  .About .icons .Logo {
-    max-width: 40%;
+  .About .icons .iconName .Logo {
+    width: 40%;
     margin-bottom: 3rem;
     border-radius: 10px;
-    place-self: start center;
   }
   .About .Mypicture {
     grid-area: Mypicture;
@@ -814,12 +836,14 @@ body {
     display: grid;
     grid-template-rows: 0.5fr 3fr 7fr;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
     border-radius: 20px;
     width: 35vw;
     min-height: 60vh;
     margin-top: 2rem;
     place-items: center;
+  }
+  .WorkExperience .WorkGrid .Outline :hover {
+    box-shadow: 10px 5px 5px #0077b6;
   }
   .WorkExperience .WorkGrid .Outline h2 {
     margin: 0.5rem;
@@ -865,6 +889,9 @@ body {
     border-radius: 20px;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
+  }
+  .ContactMe .ContactGrid .AccountArea :active {
+    transform: translate(0, 2px);
   }
   .ContactMe .ContactGrid .AccountArea .Account {
     position: relative;

@@ -113,15 +113,24 @@ body{
       display: grid;
       grid-template-columns: repeat(3,1fr);
       place-items: center;
-      .iconName{
-        display: flex;
-        justify-content: center;
-        margin: 1rem 0 0 0 ;
+      margin-top: 2rem;
+      column-gap: 0.5rem;
+      a{
+        text-decoration: none;
       }
-      .Logo{
-        width: 50%;
-        margin-bottom: 3rem;
-        border-radius: 10px;
+      :active{
+        transform: translate(0,2px);
+      }
+    .iconName{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .Logo{
+          width: 50%;
+          margin-bottom: 1rem;
+          border-radius: 10px;
+        }
       }
     }
   }
@@ -392,19 +401,26 @@ body{
     .icons{
       display: grid;
       grid-template-columns: repeat(3,1fr);
-      place-items: center;
       column-gap: 2rem;
       @include MarginLR(2rem);
+      a{
+        text-decoration: none;
+      }
+      :active{
+        transform: translate(0,2px);
+      }
       .iconName{
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-self: flex-end;
+        align-items: center;
         margin-bottom: 0;
-      }
-      .Logo{
-        width: 50px;
-        margin-bottom: 5rem;
-        border-radius: 10px;
+        min-width: 80px; 
+        .Logo{
+          width: 50px;
+          margin-bottom: 1rem;
+          border-radius: 10px;
+        }
       }
     } 
     .Mypicture{
@@ -700,17 +716,23 @@ body{
       grid-template-columns: repeat(3,8rem);
       place-items: center;
       @include MarginLR(2rem);
+      a{
+        text-decoration: none;
+      }
+      :active{
+        transform: translate(0,2px);
+      }
       .iconName{
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin-bottom: 0;
-        place-self: end center;
-      }
-      .Logo{
-        max-width: 40%;
-        margin-bottom: 3rem;
-        border-radius: 10px;
-        place-self: start center;
+        .Logo{
+          width: 40%;
+          margin-bottom: 3rem;
+          border-radius: 10px;
+        }
       }
     }
 
@@ -828,17 +850,19 @@ body{
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 70vh;
       justify-items: center;
-      .Outline{
+    .Outline{
         display: grid;
         grid-template-rows: 0.5fr 3fr 7fr;
         background-color: #00B4D8;
-        box-shadow: 10px 5px 5px #0077b6;
         border-radius: 20px;
         width: 35vw;
         min-height: 60vh;
         margin-top: 2rem;
         place-items: center;
-        h2{
+        :hover{
+          box-shadow: 10px 5px 5px #0077b6;
+        }
+          h2{
           margin: 0.5rem;
         }
         .image{
@@ -883,6 +907,9 @@ body{
         border-radius: 20px;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
+        :active{
+          transform: translate(0,2px);
+        }  
         .Account{
           position: relative;
           display: flex;

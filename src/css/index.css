@@ -5,11 +5,7 @@ html {
 a {
   color: blue;
   font-weight: bold;
-}
-
-a:hover {
-  background-size: contain;
-  color: blue;
+  text-decoration: none;
 }
 
 a:visited {
@@ -57,9 +53,20 @@ body {
     flex-wrap: wrap;
     border-bottom: solid 1px rgb(60, 24, 156);
   }
+  .Header nav a:hover {
+    background-size: contain;
+    color: blue;
+    transform: scale(1.1);
+  }
+  .Header nav a:hover p {
+    display: flex;
+    align-items: end;
+    height: 20%;
+    background-color: #6bc6e1;
+    margin-right: 1rem;
+  }
   .Header nav p {
     margin-left: 2rem;
-    text-decoration: underline;
   }
   .About {
     display: flex;
@@ -75,7 +82,7 @@ body {
     margin-bottom: 0;
     align-self: start;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
+    box-shadow: 10px 5px 5px #75d7ea;
     border-radius: 20px;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -105,15 +112,24 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    margin-top: 2rem;
+    column-gap: 0.5rem;
+  }
+  .About .icons a {
+    text-decoration: none;
+  }
+  .About .icons :active {
+    transform: translate(0, 2px);
   }
   .About .icons .iconName {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 1rem 0 0 0;
+    align-items: center;
   }
-  .About .icons .Logo {
+  .About .icons .iconName .Logo {
     width: 50%;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
   }
   .Project {
@@ -134,10 +150,16 @@ body {
     display: grid;
     grid-template-rows: 1fr 3fr;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
     border-radius: 20px;
     width: 45vw;
     place-items: center;
+  }
+  .Project .ProjectGrid .POutline:hover {
+    transition: 0.4s;
+    box-shadow: 10px 5px 5px #0077b6;
+  }
+  .Project .ProjectGrid .POutline:active {
+    box-shadow: inset 5px 5px #0077b6;
   }
   .Project .ProjectGrid .POutline h2 {
     margin: 1vh 0;
@@ -177,7 +199,7 @@ body {
     display: grid;
     grid-template-rows: auto;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
+    box-shadow: 10px 5px 5px #75d7ea;
     border-radius: 20px;
     width: 80vw;
     place-items: center;
@@ -223,10 +245,16 @@ body {
     display: grid;
     grid-template-rows: auto;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
     border-radius: 20px;
     width: 80vw;
     place-items: center;
+  }
+  .WorkExperience .WorkGrid .Outline:hover {
+    transition: 0.4s;
+    box-shadow: 10px 5px 5px #0077b6;
+  }
+  .WorkExperience .WorkGrid .Outline:active {
+    box-shadow: inset 5px 5px #0077b6;
   }
   .WorkExperience .WorkGrid .Outline h2 {
     margin-top: 0.5rem;
@@ -332,10 +360,24 @@ body {
   }
   .Header nav {
     border-bottom: 0.5px solid rgb(60, 24, 156);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+    column-gap: 0.5rem;
+  }
+  .Header nav a:hover {
+    background-size: contain;
+    color: blue;
+    transform: scale(1.1);
+  }
+  .Header nav a:hover p {
+    display: flex;
+    align-items: end;
+    height: 20%;
+    background-color: #6bc6e1;
+    margin-right: 1rem;
   }
   .Header nav p {
-    display: inline-block;
-    text-decoration: underline;
     margin-right: 0.1rem;
     margin-left: 0.5rem;
   }
@@ -360,7 +402,7 @@ body {
   .About .tytle {
     grid-area: tytle;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
+    box-shadow: 10px 5px 5px #75d7ea;
     border-radius: 20px;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -378,20 +420,27 @@ body {
   .About .icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    place-items: center;
     column-gap: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .About .icons a {
+    text-decoration: none;
+  }
+  .About .icons :active {
+    transform: translate(0, 2px);
+  }
   .About .icons .iconName {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-self: flex-end;
+    align-items: center;
     margin-bottom: 0;
+    min-width: 80px;
   }
-  .About .icons .Logo {
+  .About .icons .iconName .Logo {
     width: 50px;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
   }
   .About .Mypicture {
@@ -426,10 +475,16 @@ body {
     display: grid;
     grid-template-rows: 1fr 3.5fr;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
     border-radius: 20px;
     width: 40vw;
     place-items: center;
+  }
+  .Project .ProjectGrid .POutline:hover {
+    transition: 0.4s;
+    box-shadow: 10px 5px 5px #0077b6;
+  }
+  .Project .ProjectGrid .POutline:active {
+    box-shadow: inset 5px 5px #0077b6;
   }
   .Project .ProjectGrid .POutline h2 {
     margin: 0.3vh 0;
@@ -471,7 +526,7 @@ body {
     display: grid;
     grid-template-rows: 0.5fr 3fr 7fr;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
+    box-shadow: 10px 5px 5px #75d7ea;
     border-radius: 20px;
     width: 40vw;
     min-height: 60vh;
@@ -518,10 +573,16 @@ body {
     display: grid;
     grid-template-rows: auto;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
     border-radius: 20px;
     width: 80vw;
     place-items: center;
+  }
+  .WorkExperience .WorkGrid .Outline:hover {
+    transition: 0.4s;
+    box-shadow: 10px 5px 5px #0077b6;
+  }
+  .WorkExperience .WorkGrid .Outline:active {
+    box-shadow: inset 5px 5px #0077b6;
   }
   .WorkExperience .WorkGrid .Outline h2 {
     margin-top: 0.5rem;
@@ -636,9 +697,20 @@ body {
     display: flex;
     justify-content: flex-end;
   }
+  .Header nav a:hover {
+    background-size: contain;
+    color: blue;
+    transform: scale(1.1);
+  }
+  .Header nav a:hover p {
+    display: flex;
+    align-items: end;
+    height: 20%;
+    background-color: #6bc6e1;
+    margin-right: 1rem;
+  }
   .Header nav p {
     margin-right: 1.5rem;
-    text-decoration: underline;
   }
   .About {
     display: grid;
@@ -661,7 +733,7 @@ body {
     grid-area: tytle;
     margin-bottom: 0;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
+    box-shadow: 10px 5px 5px #75d7ea;
     border-radius: 20px;
     margin-left: 1rem;
   }
@@ -685,17 +757,23 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .About .icons a {
+    text-decoration: none;
+  }
+  .About .icons :active {
+    transform: translate(0, 2px);
+  }
   .About .icons .iconName {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 0;
-    place-self: end center;
   }
-  .About .icons .Logo {
-    max-width: 40%;
+  .About .icons .iconName .Logo {
+    width: 40%;
     margin-bottom: 3rem;
     border-radius: 10px;
-    place-self: start center;
   }
   .About .Mypicture {
     grid-area: Mypicture;
@@ -723,12 +801,18 @@ body {
     display: grid;
     grid-template-rows: 1fr 4fr;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
     border-radius: 20px;
     width: 28vw;
     max-width: 450px;
     margin-top: 2rem;
     place-items: center;
+  }
+  .Project .ProjectGrid .POutline:hover {
+    transition: 0.4s;
+    box-shadow: 10px 5px 5px #0077b6;
+  }
+  .Project .ProjectGrid .POutline:active {
+    box-shadow: inset 5px 5px #0077b6;
   }
   .Project .ProjectGrid .POutline h2 {
     margin: 1vh 0;
@@ -770,7 +854,7 @@ body {
     display: grid;
     grid-template-rows: 0.5fr 3fr 7fr;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
+    box-shadow: 10px 5px 5px #75d7ea;
     border-radius: 20px;
     width: 25vw;
     min-height: 60vh;
@@ -814,12 +898,18 @@ body {
     display: grid;
     grid-template-rows: 0.5fr 3fr 7fr;
     background-color: #00B4D8;
-    box-shadow: 10px 5px 5px #0077b6;
     border-radius: 20px;
     width: 35vw;
     min-height: 60vh;
     margin-top: 2rem;
     place-items: center;
+  }
+  .WorkExperience .WorkGrid .Outline:hover {
+    transition: 0.4s;
+    box-shadow: 10px 5px 5px #0077b6;
+  }
+  .WorkExperience .WorkGrid .Outline:active {
+    box-shadow: inset 5px 5px #0077b6;
   }
   .WorkExperience .WorkGrid .Outline h2 {
     margin: 0.5rem;
@@ -866,6 +956,9 @@ body {
     padding-top: 1rem;
     padding-bottom: 1.5rem;
   }
+  .ContactMe .ContactGrid .AccountArea :active {
+    transform: translate(0, 2px);
+  }
   .ContactMe .ContactGrid .AccountArea .Account {
     position: relative;
     display: flex;
@@ -909,6 +1002,10 @@ body {
 }
 .Footer .copyRight p {
   text-align: center;
+}
+
+.ContactMe .Account p {
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=index.css.map */

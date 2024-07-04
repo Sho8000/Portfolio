@@ -1,0 +1,92 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right top, #0077b6, #1c8bc2, #369fcd, #50b2d7, #6bc6e1, #7dd0e6, #8fdaeb, #a0e4f1, #abe7f3, #b6eaf5, #c0edf6, #caf0f8);
+}
+
+#Sub2:hover + #Mainpic1{
+  display: none;
+}
+
+.HobbyPage{
+  height: 100vh;
+  .Head{
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-family: Courgette;      
+      font-size: 52px;
+      margin-left: 2rem;
+    }
+    nav{
+      align-self: center;
+      padding-right: 2rem;
+      a{
+        text-decoration: none;
+      }
+      li{
+        list-style: none;
+      }    
+    }
+  }
+  .HobbyPageGrid{
+    display: grid;
+    background-color: #48CAE4; 
+    box-shadow: 10px 5px 5px #0077b6;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    padding: 1rem;
+    margin: 0 1rem;
+    .mainImage{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    img{
+      position: absolute;
+        max-width: 95%;
+        max-height: 95%;  
+      }
+      #Mainpic2{
+        display: none;
+      }
+      #Mainpic3{
+        display: none;
+      }
+      #Mainpic4{
+        display: none;
+      }
+      #Mainpic5{
+        display: none;
+      }
+      #Mainpic6{
+        display: none;
+      }
+    }
+    .subImage{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 1rem;
+      column-gap: 1rem;
+      grid-template-rows: 40vh 40vh;
+      .flame{
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        background-color: #00B4D8; 
+        box-shadow: inset 5px 5px 5px #0077b6;
+        padding: 0.3rem;
+        video{
+          max-width: 95%;
+          max-height: 95%;
+        }
+        img{
+          max-width: 95%;
+          max-height: 95%; 
+        }
+        }
+    }
+  }
+}

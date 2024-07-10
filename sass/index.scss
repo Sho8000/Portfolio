@@ -20,6 +20,16 @@ a{
 a:visited{
   color: rgb(221, 96, 96);
 }
+.submit:active{
+  transform: translate(0,2px);
+}
+.BoxSize{
+  caret-color: transparent;
+}
+.InputFocusColor{
+  border: white 2px solid !important;
+  outline: transparent;
+}
 
 body{
   padding: 0;
@@ -331,16 +341,51 @@ body{
       }
 
       .SendMessage{
-        background-color: #48CAE4; 
-        box-shadow: 10px 5px 5px #0077b6;
+        background-color: #48CAE4;
+        box-shadow: 5px 5px 5px #0077b6;
         border-radius: 20px;
-        padding-top: 1rem;
+        padding-top: 0.2rem;
         padding-bottom: 1.5rem;
         margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        #Form{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-top: 1rem;
+          .inputBackground{
+            background-color: #00B4D8;
+            box-shadow: inset 5px 5px 5px #0077b6;
+            padding: 0.3rem;  
+            border-radius: 5px;
+          }
+          .submitBackground{
+            background-color: #48CAE4;
+            box-shadow: 5px 5px 5px #0077b6;
+            border-radius: 5px;
+          }
+          .BoxSize{
+            width: 90%;
+            box-sizing: border-box;
+            border: none;
+            margin-bottom: 1rem;
+          }
+          .MessageBox{
+            width: 90%;
+            box-sizing: border-box;
+            border: none;
+            margin-bottom: 1rem;
+          }
+          .submit{
+            width: 90%;
+            box-sizing: border-box;
+            height: 30px;
+            border: 1px solid rgb(60, 24, 156);
+          }
+          .PC{
+            display: none;
+          }
+        }
       }
     }
   }
@@ -675,10 +720,46 @@ body{
         border-radius: 20px;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        #Form{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-top: 1rem;
+          .inputBackground{
+            background-color: #00B4D8;
+            box-shadow: inset 5px 5px 5px #0077b6;
+            padding: 0.3rem;  
+            border-radius: 5px;
+          }
+          .submitBackground{
+            background-color: #48CAE4;
+            box-shadow: 5px 5px 5px #0077b6;
+            border-radius: 5px;
+          }
+          .BoxSize{
+            width: 90%;
+            height: 40px;
+            box-sizing: border-box;
+            border: none;
+            margin-bottom: 1rem;
+          }
+          .MessageBox{
+            width: 90%;
+            box-sizing: border-box;
+            border: none;
+            margin-bottom: 1rem;
+          }
+          .submit{
+            width: 90%;
+            box-sizing: border-box;
+            height: 40px;
+            border: 1px solid rgb(60, 24, 156);
+          }
+          .Phone{
+            display: none;
+          }
+        }
       }
     }
   }
@@ -1007,10 +1088,46 @@ body{
         border-radius: 20px;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        #Form{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-top: 1rem;
+          .inputBackground{
+            background-color: #00B4D8;
+            box-shadow: inset 5px 5px 5px #0077b6;
+            padding: 0.3rem;  
+            border-radius: 5px;
+          }
+          .submitBackground{
+            background-color: #48CAE4;
+            box-shadow: 5px 5px 5px #0077b6;
+            border-radius: 5px;
+          }
+          .BoxSize{
+            width: 90%;
+            height: 40px;
+            box-sizing: border-box;
+            border: none;
+            margin-bottom: 1rem;
+          }
+          .MessageBox{
+            width: 90%;
+            box-sizing: border-box;
+            border: none;
+            margin-bottom: 1rem;
+          }
+          .submit{
+            width: 90%;
+            box-sizing: border-box;
+            height: 40px;
+            border: 1px solid rgb(60, 24, 156);
+          }
+          .Phone{
+            display: none;
+          }
+        }
       }
     }
   }

@@ -37,10 +37,10 @@
         </p>
         <p class="information Phone">I was working in semiconductor industry. I'm good at <strong>providing Efficiency</strong>, and I'm learning <strong>HTML/CSS and JS</strong> to become a Web Developer.</p>
       
-        <a href="hobby.html">
+<!--         <a href="hobby.html"> -->
           <h2 class="Intro">I'm an active person
         </h2>
-      </a>
+<!--       </a> -->
         <p class="information PC"> I really like Nature, which is Mountain, river, sea,,, and sports which is Soccer, Handball, Tennis, Bouldering, Judo and so on. I have scuba diving license and Judo Black belt. I'm going to do Judo in Canada in the future. Honestly, I'm not good at doing sports, but I really love and enjoy nature and sports. <strong>Let's enjoy together!!</strong>
         </p>
         <p class="information Phone">I love Nature and sports. And I have scuba diving license and Judo Black belt. I really love and enjoy nature and sports. <strong>Let's enjoy together!!</strong>
@@ -170,8 +170,23 @@
           </div>
         </div>
         <div class="SendMessage">
-          <p>Send Message Box.</p>
-          <p>Comming Soon...</p>
+          <form id="Form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="dd6fd7ee-f4f8-4a07-9937-2416e8ea3f6c">
+            <input type="hidden" name="subject" value="Trying out ContactFORMS">
+            <input type="checkbox" name="botcheck" id="" style="display: none;">
+          
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Full Name" class="BoxSize inputBackground" required>
+            <label for="name"></label>
+            <input type="email" id="email" name="email" placeholder="Email Address" class="BoxSize inputBackground" required>
+            <label for="subject"></label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" class="BoxSize inputBackground" required>
+            <label for="messagePC"></label>
+            <textarea type="message" id="messagePC" name="messagePC" placeholder="Message..." class="MessageBox inputBackground PC" rows="20"></textarea>
+            <label for="messagePhone"></label>
+            <textarea type="message" id="messagePhone" name="messagePhone" placeholder="Message..." class="MessageBox inputBackground Phone" rows="10"></textarea>
+            <button type="submit" class="submit submitBackground">Submit</button>
+          </form>
         </div>
       </div>
     </div>
@@ -185,6 +200,6 @@
         </p>
       </div>
     </div>
-
+    <script src="function.js"></script>
   </body>
 </html>

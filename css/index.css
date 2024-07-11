@@ -21,8 +21,7 @@ a:visited {
 }
 
 .InputFocusColor {
-  border: white 2px solid !important;
-  outline: transparent;
+  outline: white 2px solid !important;
 }
 
 body {

@@ -41,4 +41,24 @@ document.addEventListener("DOMContentLoaded",()=>{
     InputFocusMessagePhone.classList.remove("InputFocusColor")
   });
 
+  const Form = document.getElementById("Form")
+  Form.addEventListener("submit",(event)=>{    
+    event.preventDefault();
+//    const Data = document.getElementById("Form")
+    const formData = {
+      Name: InputFocusName.value,
+      Email: InputFocusEmail.value,
+      Subject: InputFocusSubject.value,
+      MessagePC: InputFocusMessagePC.value,
+      MessagePhone: InputFocusMessagePhone.value
+    };
+    InputFocusName.value = "";
+    InputFocusEmail.value = "";
+    InputFocusSubject.value = "";
+    InputFocusMessagePC.value = "";
+    InputFocusMessagePhone.value = "";
+    console.log(formData);
+  });
+
+
 });
